@@ -1,0 +1,71 @@
+.home-container {
+  padding: 40px 20px;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  color: #00d4ff;
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
+}
+
+.hero p {
+  font-size: 18px;
+  color: #aaa;
+}
+
+.feature-card {
+  border: 2px solid #00d4ff;
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 212, 255, 0.3);
+}
+
+.feature-icon {
+  font-size: 48px;
+  color: #00d4ff;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.feature-card .btn-explore {
+  background-color: #00d4ff;
+  border: none;
+  color: #000;
+  font-weight: bold;
+}
+
+.feature-card .btn-explore:hover {
+  background-color: #00ffff;
+}
+
+.stats-card {
+  border: 2px solid #00d4ff;
+  margin-top: 30px;
+}
+
+.stat {
+  text-align: center;
+  padding: 20px;
+}
+
+.stat-value {
+  font-size: 36px;
+  color: #00d4ff;
+  font-weight: bold;
+}
+
+.stat-label {
+  font-size: 14px;
+  color: #888;
+  margin-top: 10px;
+}

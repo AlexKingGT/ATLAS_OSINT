@@ -1,0 +1,50 @@
+.app-container {
+  display: flex;
+  height: 100vh;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  color: #eaeaea;
+}
+
+.main-content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px;
+}
+
+/* Dark theme */
+body {
+  background-color: #0f3460;
+  color: #eaeaea;
+}
+
+.btn-primary {
+  background-color: #00d4ff;
+  border-color: #00d4ff;
+  color: #000;
+}
+
+.btn-primary:hover {
+  background-color: #00b8d4;
+  border-color: #00b8d4;
+}
+
+.card {
+  background-color: #1a1a2e;
+  border-color: #00d4ff;
+  color: #eaeaea;
+}
+
+.form-control,
+.form-select {
+  background-color: #16213e;
+  border-color: #00d4ff;
+  color: #eaeaea;
+}
+
+.form-control:focus,
+.form-select:focus {
+  background-color: #16213e;
+  border-color: #00ffff;
+  color: #eaeaea;
+  box-shadow: 0 0 0 0.2rem rgba(0, 212, 255, 0.25);
+}
