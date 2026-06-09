@@ -15,6 +15,7 @@ from app.api import (
     analyzer_router,
     health_router
 )
+from app.api.test import router as test_router
 from app.database.connection import init_db
 from app.config import settings
 
@@ -68,13 +69,15 @@ app.include_router(health_router, prefix="/api", tags=["Health"])
 app.include_router(collectors_router, prefix="/api/collectors", tags=["Collectors"])
 app.include_router(search_router, prefix="/api/search", tags=["Search"])
 app.include_router(analyzer_router, prefix="/api/analyzer", tags=["Analyzer"])
+app.include_router(test_router, prefix="/api/test", tags=["Test Data (Demo)"])
 
 @app.get("/")
 async def root():
     return {
         "status": "ATLAS_OSINT Backend Running",
         "version": "1.0.0",
-        "docs": "/api/docs"
+        "docs": "/api/docs",
+        "test_endpoint": "/api/test/info"
     }
 
 if __name__ == "__main__":
